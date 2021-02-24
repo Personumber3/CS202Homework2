@@ -17,7 +17,7 @@ using namespace std;
 
 
 int main(int argc, const char * argv[]) {
-    
+    cout << "meow" << endl;
     
     char area = 3["algorithm"];
     int a = area;
