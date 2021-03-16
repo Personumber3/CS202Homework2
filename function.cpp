@@ -10,3 +10,8 @@
 Value::Value(const std::vector<int> nums):_numbers_(nums){}
 Value::Value(const std::vector<std::string> words):_wordlist_(words){}
 Value::Value(const std::string word):_words_(word){}
+
+std::vector<int> Value::getNums(){return _numbers_;}
+
+std::string Value::getWord(){return _words_;}
+std::vector<std::string> Value::getWords(){return _wordlist_;}

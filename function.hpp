@@ -21,7 +21,9 @@ public:
 
     
     //member functions
-    
+    std::vector<int> getNums();
+    std::string getWord();
+    std::vector<std::string> getWords();
     
 private:
     //member data;
