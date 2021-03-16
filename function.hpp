@@ -25,6 +25,11 @@ public:
     std::string getWord();
     std::vector<std::string> getWords();
     
+    void queue_push(const std::string data);
+    void queue_pop();
+    void stack_push(const std::string data);
+    void stack_pop();
+    
 private:
     //member data;
     std::string _words_;

@@ -15,3 +15,8 @@ std::vector<int> Value::getNums(){return _numbers_;}
 
 std::string Value::getWord(){return _words_;}
 std::vector<std::string> Value::getWords(){return _wordlist_;}
+
+void queue_push(const std::string data){}
+void queue_pop(){}
+void stack_push(const std::string data){}
+void stack_pop(){}
