@@ -6,13 +6,7 @@
 //
 
 #include <iostream>
-
-#include <string>
-#include <vector>
-#include <chrono>
 #include "function.hpp"
-#include <algorithm>
-#include <random>
 using std::endl;
 using std::cout;
 
