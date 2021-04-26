@@ -9,35 +9,18 @@
 #define function_hpp
 
 #include <stdio.h>
-#include <string>
-#include <vector>
+#include <list>
 
 struct Value{
 public:
-    //constructors, if applicable
-    Value(const std::vector<int> nums);
-    Value(const std::vector<std::string> words);
-    Value(const std::string word);
+    Value(std::list<int> &nums);
 
-    
-    //member functions
-    std::vector<int> getNums();
-    std::string getWord();
-    std::vector<std::string> getWords();
-    
-    int queue(const int data);
-    int stack(const int data);
-    void insert(const int data);
-    void search(const int data);
-    
-private:
-    //member data;
-    std::string _words_;
-    std::vector<int> _numbers_;
-    std::vector<std::string> _wordlist_;
-    
-    std::vector<int> _keys_;
-    std::vector<std::string> _values_;
+    std::list<int> _numbers_;
 };
+
+void queue(Value &data, const int &num);
+void stack(Value &data, const int &num);
+
+void print(Value const &data);
 
 #endif /* function_hpp */

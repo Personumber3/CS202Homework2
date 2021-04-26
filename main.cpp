@@ -13,18 +13,25 @@
 #include "function.hpp"
 #include <algorithm>
 #include <random>
-using namespace std;
+using std::endl;
+using std::cout;
 
 
 int main(int argc, const char * argv[]) {
-    Value Henry("meow");
-    vector<int> myNums(42,14);
+    std::list<int> myNums(42,14);
     Value George(myNums);
-    
-    cout << "meow" << endl;
-    cout << "Henry says " << Henry.getWord() << endl;
-    cout << "George's numbers are " << "Currently unavailable. We appologize for the inconvenience." <<endl;
-    
+
+    cout << "Initial List" << endl;
+    print(George);
+
+    cout << "Test Queue" << endl;
+    queue(George,1);
+    print(George);
+
+    cout << "Test Stack" << endl;
+    stack(George,2);
+    print(George);
+
     /*
     char area = 3["algorithm"];
     int a = area;
