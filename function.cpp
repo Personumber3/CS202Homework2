@@ -20,7 +20,10 @@ void stack(Value &data,const int num){
     data._numbers_.push_back(num);
 }
 
-void insert(const int data){}
+void insert(Value &data, const int &num){
+
+}
+
 void search(const int data){}
 
 void print(Value const &data){

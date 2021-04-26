@@ -20,6 +20,7 @@ public:
 
 void queue(Value &data, const int &num);
 void stack(Value &data, const int &num);
+void insert(Value &data, const int &num);
 
 void print(Value const &data);
 
