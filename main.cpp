@@ -41,13 +41,21 @@ int main(int argc, const char * argv[]) {
     print(George);
 
     //auto sptr = std::make_unique<int>(static_num);
+    cout << "static " << endl;
     printPointer(static_num);
+    auto free = std::make_unique<int>(1);
+    cout << "free " << endl << *free << "i = " << free << endl;
     int heap_num = 2;
+    cout << "heap " << endl;
     printPointer(heap_num);
     int heap2 = 3;
     printPointer(heap2);
-    auto free = std::make_unique<int>(1);
-    cout << *free << "i = " << free << endl;
+    cout << endl << "as you can see, heap is higher than free, which is higher than static, and heap counts down not up." << endl;
+
+    char* sentence = "Hello Meow!";
+    cout << endl << sentence << endl;
+    to_lower(sentence);
+
     /*
     char area = 3["algorithm"];
     int a = area;

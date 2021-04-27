@@ -35,5 +35,5 @@ with higher indices allocated at higher or lower addresses?
 
 void printPointer(int &i);
 
-
+void to_lower(char* s);
 #endif /* function_hpp */
