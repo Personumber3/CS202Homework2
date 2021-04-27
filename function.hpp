@@ -33,7 +33,7 @@ Write a C++ program that tells the order in which static storage, the stack, and
 with higher indices allocated at higher or lower addresses?
 */
 
-void printPointer(int i);
+void printPointer(int &i);
 
 
 #endif /* function_hpp */

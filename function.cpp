@@ -45,7 +45,7 @@ void print(Value const &data){
 }
 
 
-void printPointer(int i){
+void printPointer(int &i){
     int* iptr = &i;
     // the unary * operator dereferences the pointer
     std::cout << "i = " << *iptr << "\n";

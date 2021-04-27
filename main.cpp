@@ -40,9 +40,14 @@ int main(int argc, const char * argv[]) {
     search_n_insert(George,42,14);
     print(George);
 
-    //int free_num = 2;
     //auto sptr = std::make_unique<int>(static_num);
-
+    printPointer(static_num);
+    int heap_num = 2;
+    printPointer(heap_num);
+    int heap2 = 3;
+    printPointer(heap2);
+    auto free = std::make_unique<int>(1);
+    cout << *free << "i = " << free << endl;
     /*
     char area = 3["algorithm"];
     int a = area;
